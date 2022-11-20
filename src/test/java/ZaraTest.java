@@ -17,7 +17,7 @@ public class ZaraTest {
 
     @BeforeTest
     public void browserSetup(){
-        System.setProperty("webdriver.chrome.driver", "D:\\chromedriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "../../../chromedriver.exe");
         driver.get("https://www.zara.com/by/ru/");
     }
 
