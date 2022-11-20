@@ -17,6 +17,7 @@ public class WebDriverSeleniumHQTest {
 
     @BeforeMethod(alwaysRun = true)
     public void browserSetup(){
+        System.setProperty("webdriver.chrome.driver", "D:\\webDriver\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://минидино.рф/");
     }
