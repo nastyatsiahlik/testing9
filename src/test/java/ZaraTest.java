@@ -47,7 +47,7 @@ public class ZaraTest {
     @AfterTest(alwaysRun = true)
     public void closeBrowser(){
         driver.quit();
-        driver = null;
+
     }
 
     private  static WebElement waitForElementLocatorBy (WebDriver driver, By by){
