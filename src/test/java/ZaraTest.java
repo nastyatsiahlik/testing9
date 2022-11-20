@@ -13,12 +13,11 @@ import java.time.Duration;
 
 public class ZaraTest {
 
-    private WebDriver driver;
+    private static WebDriver driver = new ChromeDriver();
 
     @BeforeMethod(alwaysRun = true)
     public void browserSetup(){
-        System.setProperty("webdriver.chrome.driver", "D:/webDriver/chromedriver.exe");
-        driver = new ChromeDriver();
+        System.setProperty("webdriver.chrome.driver", "D:\\webDriver\\chromedriver.exe");
         driver.get("https://www.zara.com/by/ru/");
     }
 
