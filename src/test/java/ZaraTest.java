@@ -15,7 +15,7 @@ public class ZaraTest {
 
     private static WebDriver driver = new ChromeDriver();
 
-    @BeforeTest(alwaysRun = true)
+    @BeforeTest
     public void browserSetup(){
         System.setProperty("webdriver.chrome.driver", "D:\\webDriver\\chromedriver.exe");
         driver.get("https://www.zara.com/by/ru/");
@@ -43,7 +43,7 @@ public class ZaraTest {
         Assert.assertEquals(productNameOnPage.toLowerCase(), inputName.toLowerCase(), "No such product");
     }
 
-    @AfterTest(alwaysRun = true)
+    @AfterTest
     public void closeBrowser(){
         driver.quit();
 
